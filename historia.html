@@ -23,41 +23,12 @@
 
     <main class="p-4">
 
-        <div class="main_container row flex-row">
-            <div class="col-12 col-md-2 d-flex flex-column">
-                <!-- boton desconectarse -->
-                <div class="mt-4">
-                    <a href="/" class="btn btn-danger w-100">Desconectarse</a>
-                </div>
-                <!-- boton crear  -->
-                <div class="mt-4">
-                    <a href="/crear_hitoria.html" class="btn btn-dark w-100">Crear Historia</a>
-                </div>
-                <hr>
-                <!-- Filtro buscar por nombre -->
-                <div class="mt-1">
-                    <div class="form-group">
-                        <label for="nombre">Filtro nombre completo</label>
-                        <input type="text" class="form-control" name="nombre" id="name_input" />
-                    </div>
-                    <button onclick="redirectName()" class="btn btn-dark mt-1">Buscar</button>
-                </div>
-                <!-- Filtro buscar por cedula -->
-                <div class="mt-1">
-                    <div class="form-group">
-                        <label for="cedula">Filtro por documento</label>
-                        <input type="text" class="form-control" name="cedula" id="cedula" />
-                    </div>
-                    <button onclick="redirectCedula()" class="btn btn-dark mt-1">Buscar</button>
-                </div>
-                <hr>
+            <div class="main_container row flex-row">
 
 
-
-            </div>
-
-            <div class="col-12 col-md-10" id="historias_container">
-                <!-- <div class="historia_container">
+                <div class="col-12" id="historias_container">
+                    
+                    <!-- <div class="historia_container">
                         <h2 class="text-center text-uppercase fw-bold">
                             Historia #1
                         </h2>
@@ -259,17 +230,17 @@
                         </h5>
                     </div> -->
 
+                </div>
+
+
             </div>
-
-
-        </div>
-
+            
 
     </main>
 
     <footer></footer>
 
-    <script src="./js/script_hitorias.js"></script>
+    <script src="./js/script_historia.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

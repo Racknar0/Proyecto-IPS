@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="login_body ">
+    <header class="d-flex justify-content-center align-items-center flex-column">
+        <h1 class="crear_login">CREAR HISTORIA</h1>
+        <!-- link a historias.html -->
+        <a href="/historias.html" class="btn btn-success">Volver</a>
+        
+    </header>
+
+<!-- campos para ingresar:
+Nombres
+Apellidos
+Sexo
+Fecha de nacimiento
+Email
+Telefono
+Direccion
+-->
+
+    <main class="px-2 px-md-5 pb-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <form action="" class="bg-white form_login mt-4 pb-5">
+                <hr>
+                <h3 class="text-center p-3">Información Personal</h3>
+                
+
+                <div class="row">
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_nombres" class="form-label">Nombres:</label>
+                        <input type="text" class="form-control" id="input_nombres" placeholder="Ingresa los nombres del paciente">
+                    </div>
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_apellidos" class="form-label">Apellidos:</label>
+                        <input type="text" class="form-control" id="input_apellidos" placeholder="Ingresa los apellidos del paciente ">
+                    </div>
+
+                    <!-- edad -->
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_edad" class="form-label">Edad:</label>
+                        <input type="number" class="form-control" id="input_edad" placeholder="ingresa la edad del paciente">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="sexo" class="form-label">Sexo:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sexo" id="radio_masculino">
+                            <label class="form-check-label" for="radio_masculino">
+                              Masculino
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="radio_femenino">
+                        <label class="form-check-label" for="radio_femenino">
+                            Femenino
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_fecha_nacimiento" class="form-label">Fecha de nacimiento:</label>
+                        <input type="date" class="form-control" id="input_fecha_nacimiento">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="input_email" placeholder="Ingresa el correo del paciente">
+                    </div>
+                
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="input_telefono" placeholder="Ingresa el teléfono del paciente">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_direccion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="input_direccion" placeholder="Ingresa la dirección del paciente">
+                    </div>
+                </div>
+                <hr>
+                <h3 class="text-center p-3">Exploración Fisica </h3>
+                
+
+<!-- campos para ingresar:
+Peso
+Estatura
+Frecuencia Cardiaca
+Frecuencia Respiratoria
+Presion Arterial
+Embarazo (si/no)
+Descripcion Textarea
+-->                
+
+
+                <div class="row">
+                    
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_peso" class="form-label">Peso:</label>
+                        <input type="number" class="form-control" id="input_peso" placeholder="Ingresa el peso del paciente">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_estatura" class="form-label">Estatura:</label>
+                        <input type="number" class="form-control" id="input_estatura" placeholder="Ingresa la estatura del paciente en CM">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_frecuencia_cardiaca" class="form-label">Frecuencia Cardiaca:</label>
+                        <input type="number" class="form-control" id="input_frecuencia_cardiaca" placeholder="Ingresa la frecuencia cardiaca del paciente">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_frecuencia_respiratoria" class="form-label">Frecuencia Respiratoria:</label>
+                        <input type="number" class="form-control" id="input_frecuencia_respiratoria" placeholder="Ingresa la frecuencia respiratoria del paciente">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_presion_arterial" class="form-label">Presión Arterial xx/xx:</label>
+                        <input type="text" class="form-control" id="input_presion_arterial" placeholder="Ejemplo: 120/80">
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Embarazo:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="embarazo" id="embarazo_si">
+                            <label class="form-check-label" for="embarazo_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="embarazo" id="embarazo_no">
+                        <label class="form-check-label" for="embarazo_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12">
+                        <label for="input_descripcion" class="form-label">Descripción:</label>
+                        <textarea class="form-control" id="input_descripcion" rows="3" placeholder="Descipcion adicional de la exploración fisica"></textarea>
+                    </div>
+                </div>
+
+<!-- campos para ingresar:
+Motivo Textarea
+Fecha y hora llegada 
+--> 
+
+                <hr>
+                <h3 class="text-center">Motivo Consulta </h3>
+                <div class="row">
+
+                    <div class="mb-3 col-12">
+                        <label for="input_motivo" class="form-label">Motivo:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Motivo de la consulta del paciente"></textarea>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="input_fecha_llegada" class="form-label">Fecha y hora de consulta:</label>
+                        <input type="datetime-local" class="form-control" id="input_fecha_llegada">
+                    </div>
+                </div>
+
+<!-- campos para ingresar:
+Alcoholismo (si/no)
+Tabaquismo (si/no)
+Drogadiccion (si/no)
+Alergias (si/no)
+Cirugias (si/no)
+-->     
+
+                    <hr>
+                <h3 class="text-center">Antecedentes No Patologicos</h3>
+                <div class="row">
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Alcoholismo:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="alcoholismo" id="alcoholismo_si">
+                            <label class="form-check-label" for="alcoholismo_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="alcoholismo" id="alcoholismo_no">
+                        <label class="form-check-label" for="alcoholismo_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Tabaquismo:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="tabaquismo" id="tabaquismo_si">
+                            <label class="form-check-label" for="tabaquismo_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tabaquismo" id="tabaquismo_no">
+                        <label class="form-check-label" for="tabaquismo_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Drogadiccion:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="drogadiccion" id="drogadiccion_si">
+                            <label class="form-check-label" for="drogadiccion_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="drogadiccion" id="drogadiccion_no">
+                        <label class="form-check-label" for="drogadiccion_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Alergias:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="alergias" id="alergias_si">
+                            <label class="form-check-label" for="alergias_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="alergias" id="alergias_no">
+                        <label class="form-check-label" for="alergias_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Cirugias:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cirugias" id="cirugias_si">
+                            <label class="form-check-label" for="cirugias_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cirugias" id="cirugias_no">
+                        <label class="form-check-label" for="cirugias_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+<!-- campos para ingresar:
+Pumonares (si/no)
+Cardiacos (si/no)
+Digestivos (si/no)
+Endocrinos (si/no)
+Genitourinarios (si/no)
+Hematologicos (si/no)
+Neurologicos (si/no)
+Psiquiatricos (si/no)
+Traumatologicos (si/no)
+-->                     
+
+
+                <hr>
+                <h3 class="text-center">Antecedentes Patologicos</h3>
+                <div class="row">
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Pulmonares:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pumonares" id="pumonares_si">
+                            <label class="form-check-label" for="pumonares_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pumonares" id="pumonares_no">
+                        <label class="form-check-label" for="pumonares_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Cardiacos:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cardiacos" id="cardiacos_si">
+                            <label class="form-check-label" for="cardiacos_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cardiacos" id="cardiacos_no">
+                        <label class="form-check-label" for="cardiacos_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Digestivos:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="digestivos" id="digestivos_si">
+                            <label class="form-check-label" for="digestivos_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="digestivos" id="digestivos_no">
+                        <label class="form-check-label" for="digestivos_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Endocrinos:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="endocrinos" id="endocrinos_si">
+                            <label class="form-check-label" for="endocrinos_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="endocrinos" id="endocrinos_no">
+                        <label class="form-check-label" for="endocrinos_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Genitourinarios:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genitourinarios" id="genitourinarios_si">
+                            <label class="form-check-label" for="genitourinarios_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genitourinarios" id="genitourinarios_no">
+                        <label class="form-check-label" for="genitourinarios_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Hematologicos:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="hematologicos" id="hematologicos_si">
+                            <label class="form-check-label" for="hematologicos_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="hematologicos" id="hematologicos_no">
+                        <label class="form-check-label" for="hematologicos_no">
+                            No
+                        </label>
+                        </div>
+                    </div>    
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Neurologicos:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="neurologicos" id="neurologicos_si">
+                            <label class="form-check-label" for="neurologicos_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="neurologicos" id="neurologicos_no">
+                        <label class="form-check-label" for="neurologicos_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Psiquiatricos:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="psiquiatricos" id="psiquiatricos_si">
+                            <label class="form-check-label" for="psiquiatricos_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="psiquiatricos" id="psiquiatricos_no">
+                        <label class="form-check-label" for="psiquiatricos_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12 col-md-4">
+                        <label for="nombres" class="form-label">Traumatologicos:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="traumatologicos" id="traumatologicos_si">
+                            <label class="form-check-label" for="traumatologicos_si">
+                              Si
+                            </label>
+                          </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="traumatologicos" id="traumatologicos_no">
+                        <label class="form-check-label" for="traumatologicos_no">
+                            No
+                        </label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center">Diagnostico Presuntivo</h4>
+                        <label for="diagnostico_presuntivo" class="form-label">Diagnostico Presuntivo:</label>
+                        <!-- textareea -->
+                        <textarea class="form-control" id="diagnostico_presuntivo" rows="3"></textarea>
+
+                <hr>
+                <!-- Enviar -->
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-dark" type="button">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
