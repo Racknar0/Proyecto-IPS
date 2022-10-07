@@ -1,193 +1,134 @@
 [
     {
-        "id": "1",
-        "datosPersonales": {
-            "nombre": "Juan Estevan",
-            "apellido": "Perez Arbelaez",
-            "sexo": "Masculino",
-            "fecha_nacimiento": "12/12/1996",
-            "email": "correo@correo.com",
-            "telefono": "123456789",
-            "direccion": "avenida siempre viva 123",
-            "documento": "1057587963"
-        },
-        "exploracionFisica": {
-            "peso": 80,
-            "estatura": 1.8,
-            "frecuencia_cardiaca": 80,
-            "frecuencia_respiratoria": 20,
-            "temperatura": 36.5,
-            "presion_arterial": "120/80",
-            "embarazo": false,
-            "descripcion": "El paciente presenta dolor en el pecho"
-        },
-        "motivoConsulta": {
-            "motivo": "Dolor en el pecho al respirar profundo",
-            "llegada": "12/12/2021 12:00"
-        },
-        "antecedentesNoPatologicos": {
-            "alchoholismo": false,
-            "tabaquismo": false,
-            "drogadiccion": false,
-            "alergias": false,
-            "cirigias": false
-        },
-        "antecedentesPatologicos": {
-            "pulmonares": false,
-            "cardiacos": false,
-            "digestivos": false,
-            "endocrinos": false,
-            "genitourinarios": false,
-            "hematologicos": false,
-            "neurologicos": false,
-            "psiquiatricos": false,
-            "traumatologicos": false
-        },
-        "disgnosticoPresuntivo": {
-            "diagnostico": "El paciente presenta dolor en el pecho al respirar profundo al parecer es un infarto al miocardio por lo que se le recomienda que se dirija a la sala de urgencias"
-        }
+        "id": 1,
+        "nombres": "Juanito",
+        "apellidos": "Correa",
+        "documento": 1008434343,
+        "edad": 24,
+        "fecha_nacimiento": "2022-05-10T05:00:00.000+00:00",
+        "email": "jujocan@gmail,cim",
+        "direccion": "digonal 32",
+        "telefono": "3123213123",
+        "sexo": "m",
+        "diagnostico_presuntivo": [
+            {
+                "id_diagnostico": 4,
+                "descripcion": "Tumor",
+                "paciente": null
+            }
+        ],
+        "motivo_consulta": [
+            {
+                "id_motivoconsulta": 6,
+                "motivo": " protuberancia",
+                "hora_llegada": "02:15pm",
+                "paciente": null
+            }
+        ],
+        "antecedentes_no_patologicos": [
+            {
+                "id_antecedentesnopatologicos": 2,
+                "alcoholismo": false,
+                "tabaquismo": true,
+                "drogadiccion": true,
+                "alergias": true,
+                "cirugias": true,
+                "paciente": null
+            }
+        ],
+        "antecedentes_patologicos": [
+            {
+                "id_antecedentespatologicos": 3,
+                "pulmonares": false,
+                "cardiacos": true,
+                "digestivos": true,
+                "endocrinos": true,
+                "genitourinarios": true,
+                "hematologicos": true,
+                "neurologicos": true,
+                "psiquiatricos": true,
+                "traumatologicos": true,
+                "paciente": null
+            }
+        ],
+        "exploracion_fisica": [
+            {
+                "id_exploracion": 5,
+                "peso": "28.5",
+                "estatura": "1.8",
+                "frecuencia_cardiaca": "90",
+                "frecuencia_respiratoria": "24",
+                "presion_arterial": "120/80",
+                "descripcion": "paciente con masa de 10cms",
+                "embarazo": false,
+                "paciente": null
+            }
+        ]
     },
-
     {
-        "id": "2",
-        "datosPersonales": {
-            "nombre": "Pedro Pablo",
-            "apellido": "Juarez Torres",
-            "sexo": "Masculino",
-            "fecha_nacimiento": "12/12/1996",
-            "email": "correo@correo.com",
-            "telefono": "123456789",
-            "direccion": "avenida siempre viva 123",
-            "documento": "1053302408"
-        },
-        "exploracionFisica": {
-            "peso": 80,
-            "estatura": 1.8,
-            "frecuencia_cardiaca": 80,
-            "frecuencia_respiratoria": 20,
-            "temperatura": 36.5,
-            "presion_arterial": "120/80",
-            "embarazo": false,
-            "descripcion": "El paciente presenta dolor en el pecho"
-        },
-        "motivoConsulta": {
-            "motivo": "Dolor en el pecho al respirar profundo",
-            "llegada": "12/12/2021 12:00"
-        },
-        "antecedentesNoPatologicos": {
-            "alchoholismo": false,
-            "tabaquismo": false,
-            "drogadiccion": false,
-            "alergias": false,
-            "cirigias": false
-        },
-        "antecedentesPatologicos": {
-            "pulmonares": false,
-            "cardiacos": false,
-            "digestivos": false,
-            "endocrinos": false,
-            "genitourinarios": false,
-            "hematologicos": false,
-            "neurologicos": false,
-            "psiquiatricos": false,
-            "traumatologicos": false
-        },
-        "disgnosticoPresuntivo": {
-            "diagnostico": "El paciente presenta dolor en el pecho al respirar profundo al parecer es un infarto al miocardio por lo que se le recomienda que se dirija a la sala de urgencias"
-        }
-    }, {
-        "id": "3",
-        "datosPersonales": {
-            "nombre": "Pedro Pablo",
-            "apellido": "Juarez Torres",
-            "sexo": "Masculino",
-            "fecha_nacimiento": "12/12/1996",
-            "email": "correo@correo.com",
-            "telefono": "123456789",
-            "direccion": "avenida siempre viva 123",
-            "documento": "1053302408"
-        },
-        "exploracionFisica": {
-            "peso": 80,
-            "estatura": 1.8,
-            "frecuencia_cardiaca": 80,
-            "frecuencia_respiratoria": 20,
-            "temperatura": 36.5,
-            "presion_arterial": "120/80",
-            "embarazo": false,
-            "descripcion": "El paciente presenta dolor en el pecho"
-        },
-        "motivoConsulta": {
-            "motivo": "Dolor en el pecho al respirar profundo",
-            "llegada": "12/12/2021 12:00"
-        },
-        "antecedentesNoPatologicos": {
-            "alchoholismo": false,
-            "tabaquismo": false,
-            "drogadiccion": false,
-            "alergias": false,
-            "cirigias": false
-        },
-        "antecedentesPatologicos": {
-            "pulmonares": false,
-            "cardiacos": false,
-            "digestivos": false,
-            "endocrinos": false,
-            "genitourinarios": false,
-            "hematologicos": false,
-            "neurologicos": false,
-            "psiquiatricos": false,
-            "traumatologicos": false
-        },
-        "disgnosticoPresuntivo": {
-            "diagnostico": "El paciente presenta dolor en el pecho al respirar profundo al parecer es un infarto al miocardio por lo que se le recomienda que se dirija a la sala de urgencias"
-        }
-    }, {
-        "id": "4",
-        "datosPersonales": {
-            "nombre": "Pedro Pablo",
-            "apellido": "Juarez Torres",
-            "sexo": "Masculino",
-            "fecha_nacimiento": "12/12/1996",
-            "email": "correo@correo.com",
-            "telefono": "123456789",
-            "direccion": "avenida siempre viva 123",
-            "documento": "1053302408"
-        },
-        "exploracionFisica": {
-            "peso": 80,
-            "estatura": 1.8,
-            "frecuencia_cardiaca": 80,
-            "frecuencia_respiratoria": 20,
-            "temperatura": 36.5,
-            "presion_arterial": "120/80",
-            "embarazo": false,
-            "descripcion": "El paciente presenta dolor en el pecho"
-        },
-        "motivoConsulta": {
-            "motivo": "Dolor en el pecho al respirar profundo",
-            "llegada": "12/12/2021 12:00"
-        },
-        "antecedentesNoPatologicos": {
-            "alchoholismo": false,
-            "tabaquismo": false,
-            "drogadiccion": false,
-            "alergias": false,
-            "cirigias": false
-        },
-        "antecedentesPatologicos": {
-            "pulmonares": false,
-            "cardiacos": false,
-            "digestivos": false,
-            "endocrinos": false,
-            "genitourinarios": false,
-            "hematologicos": false,
-            "neurologicos": false,
-            "psiquiatricos": false,
-            "traumatologicos": false
-        },
-        "disgnosticoPresuntivo": {
-            "diagnostico": "El paciente presenta dolor en el pecho al respirar profundo al parecer es un infarto al miocardio por lo que se le recomienda que se dirija a la sala de urgencias"
-        }
+        "id": 1,
+        "nombres": "Daniel",
+        "apellidos": "Correa",
+        "documento": 1008434343,
+        "edad": 24,
+        "fecha_nacimiento": "2022-05-10T05:00:00.000+00:00",
+        "email": "jujocan@gmail,cim",
+        "direccion": "digonal 32",
+        "telefono": "3123213123",
+        "sexo": "m",
+        "diagnostico_presuntivo": [
+            {
+                "id_diagnostico": 4,
+                "descripcion": "Tumor",
+                "paciente": null
+            }
+        ],
+        "motivo_consulta": [
+            {
+                "id_motivoconsulta": 6,
+                "motivo": " protuberancia",
+                "hora_llegada": "02:15pm",
+                "paciente": null
+            }
+        ],
+        "antecedentes_no_patologicos": [
+            {
+                "id_antecedentesnopatologicos": 2,
+                "alcoholismo": false,
+                "tabaquismo": true,
+                "drogadiccion": true,
+                "alergias": true,
+                "cirugias": true,
+                "paciente": null
+            }
+        ],
+        "antecedentes_patologicos": [
+            {
+                "id_antecedentespatologicos": 3,
+                "pulmonares": false,
+                "cardiacos": true,
+                "digestivos": true,
+                "endocrinos": true,
+                "genitourinarios": true,
+                "hematologicos": true,
+                "neurologicos": true,
+                "psiquiatricos": true,
+                "traumatologicos": true,
+                "paciente": null
+            }
+        ],
+        "exploracion_fisica": [
+            {
+                "id_exploracion": 5,
+                "peso": "28.5",
+                "estatura": "1.8",
+                "frecuencia_cardiaca": "90",
+                "frecuencia_respiratoria": "24",
+                "presion_arterial": "120/80",
+                "descripcion": "paciente con masa de 10cms",
+                "embarazo": false,
+                "paciente": null
+            }
+        ]
     }
 ]

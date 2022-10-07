@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -31,14 +31,14 @@
                 </div>
                 <!-- boton crear  -->
                 <div class="mt-4">
-                    <a href="/crear_hitoria.html" class="btn btn-dark w-100">Crear Historia</a>
+                    <a href="./crear_historia.html" class="btn btn-dark w-100">Crear Historia</a>
                 </div>
                 <hr>
                 <!-- Filtro buscar por nombre -->
                 <div class="mt-1">
                     <div class="form-group">
-                        <label for="nombre">Filtro nombre completo</label>
-                        <input type="text" class="form-control" name="nombre" id="name_input" />
+                        <label for="nombre">Filtro por nombre o apellido</label>
+                        <input type="text" class="form-control" name="nombre" id="name_input" placeholder="Ingresa Nombre o apellido">
                     </div>
                     <button onclick="redirectName()" class="btn btn-dark mt-1">Buscar</button>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="mt-1">
                     <div class="form-group">
                         <label for="cedula">Filtro por documento</label>
-                        <input type="text" class="form-control" name="cedula" id="cedula" />
+                        <input type="text" class="form-control" name="cedula" id="cedula_input" placeholder="Ingresa numero de documento">
                     </div>
                     <button onclick="redirectCedula()" class="btn btn-dark mt-1">Buscar</button>
                 </div>
