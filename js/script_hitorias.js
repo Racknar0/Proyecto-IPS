@@ -8,7 +8,7 @@ listeners();
 function listeners() {
     document.addEventListener('DOMContentLoaded', () => {
 
-        fetch('http://localhost:8080')
+        fetch('https://secret-ocean-75313.herokuapp.com/')
             .then((historias) => historias.json())
             .then((historias) => {
                 domRender(historias)
@@ -137,7 +137,7 @@ function redirectCedula() {
 }
 
 function deleteHistoria(id) {
-    fetch(`http://localhost:8080/${id}`, {
+    fetch(`https://secret-ocean-75313.herokuapp.com/${id}`, {
         method: 'DELETE',
     })
         .then((res) => {

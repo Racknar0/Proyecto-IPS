@@ -154,7 +154,7 @@ btn_submit.addEventListener('click', function(){
 
 
     if (queryString == ''){
-        fetch('http://localhost:8080', {
+        fetch('https://secret-ocean-75313.herokuapp.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -167,7 +167,7 @@ btn_submit.addEventListener('click', function(){
         window.location.href = './historias.html';
     })
     } else {
-        fetch(`http://localhost:8080/${queryString}`, {
+        fetch(`https://secret-ocean-75313.herokuapp.com/${queryString}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -186,7 +186,7 @@ btn_submit.addEventListener('click', function(){
 
 
 if (queryString !== ""){
-    fetch(`http://localhost:8080/${queryString}`)
+    fetch(`https://secret-ocean-75313.herokuapp.com/${queryString}`)
     .then(res => res.json())
     .then(data => {
         //console.log(data);
